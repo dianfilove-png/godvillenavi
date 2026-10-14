@@ -1,0 +1,36 @@
+#gvtr-panel .gvtr-dungeon-kind {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 5px;
+  margin: 10px 0;
+}
+#gvtr-panel .gvtr-dungeon-kind-select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 7px;
+  border: 1px solid #a17b32;
+  border-radius: 8px;
+  background: #fff8df;
+  color: #332b1f;
+  font: inherit;
+}
+#gvtr-panel .gvtr-dungeon-kind-status { opacity: .8; }
+@media (prefers-color-scheme: dark) {
+  #gvtr-panel .gvtr-dungeon-kind-select { background: #24251a; color: #f2e6c8; }
+}
+
+/* Mobile Godville may inherit nowrap from its map container. */
+#gvtr-panel.gvtr-panel .gvtr-pointer-note,
+#gvtr-panel.gvtr-panel .gvtr-dungeon-kind-status,
+#gvtr-panel.gvtr-panel .gvtr-source {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  text-overflow: clip;
+}
